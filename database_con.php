@@ -1,6 +1,6 @@
 <?php
 
-$conn=mysql_connect("localhost","root","Your_Mysql_password");
+$conn=mysql_connect("sonarqube.cl2hqh8vtfn7.us-east-2.rds.amazonaws.com","admin","Admin123");
 mysql_select_db("hospital", $conn);
 
 mysql_query("create table patient( patientID varchar(20) not null, pname varchar(50) not null, age float(5),gender varchar(10), address varchar(70), phone varchar(15), pimage varchar(50),primary key(patientID))");
