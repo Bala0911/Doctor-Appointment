@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!$_SESSION['id'])
+if (!$_SESSION['id'])
 {
 	header("Location:index.html");
 }
